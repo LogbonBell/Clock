@@ -1,0 +1,63 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: slategrey;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+.clock-inside {
+   height: 495px;
+  width: 500px;
+  background-color: #bbb;
+  border-radius: 50%;
+  border: 10px solid orangered;
+  position: relative; right: -370px; 
+}
+
+.hand {
+  background: skyblue;
+  height: 5px;
+  position: absolute;
+  top: 48.7%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  width: 30%;
+  right: 50%;
+}
+
+.min-hand {
+  width: 35%;
+  right: 50%;
+}
+
+.second-hand {
+  width: 40%;
+  right: 50%;
+}
+
+#clock {
+  font-size: 100px;
+  position: relative; right: -600px; top: -360px;
+  font-family: Arial black;
+  color: skyblue;
+}
+
+#text {
+  font-size: 40px;
+  position: relative; right: -600px; top: -310px;
+  font-family: Matura MT Script Capitals;
+  color: hotpink;
+}

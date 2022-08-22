@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Clock</title>
+	<link rel="stylesheet" href="Css.css">
+	<script src="Command.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="clock-frame" style="position:relative; left:-360px;">
+		<div class="clock-inside">
+		<img src="clock.jpg" style="position: relative; left: -0.3rem; top: -15px;">
+			<div class="hand hour-hand"></div>
+        	<div class="hand min-hand"></div>
+        	<div class="hand second-hand"></div>
+		</div>
+	</div>
+
+	<h1 id="text">Psalm 90:12-Teach us to number our days,<br>that we may gain a heart of wisdom.</h1>
+	<div id = "clock" onload="currentTime()"></div>
+
+</body>
+</html>
